@@ -9,8 +9,10 @@ const guess = Number(prompt("Guess a number(0-100): "));
 
 if(guess > target){
      console.log("Too High.");
-}else{
+}else if(guess < target){
     console.log("Too low.");
+}else{
+    console.log("You guessed it!");
 }
-console.log(guess);
+   
 
